@@ -1,0 +1,37 @@
+# Final Project Code Instructions
+
+I tried to make my files as documented as possible to describe exactly what I'm doing. The files containing my models are in the same format for the most part. The most difficult file is where I load and process data becauese I had so many different implementations of my features. You do not have to run this file however, I have included the training and testing data required to run the models.
+
+## Load and Process Data
+
+I did not want to include the raw data in the repository because it contains 0.5 GB. If you would like to run this file then you will have to download the raw data which I can send you or put on the repo.
+
+If you do want to run this you will not be able to run this from the beginning since I do not have any of the unprocessed data included in the repository.
+
+You can run from "Save/Load Processed Data"
+
+This file will generate 2 different types of data:
+
+1. Unbalanced full data
+2. Balanced undersampled data
+
+The undersampled data process begins after the "Balanced Data" section. This is the data that is used for the models.
+
+This data is also saved in the "Processed Data" folder so you do not have to run it to generate data.
+
+## Multilayer Perceptron Model
+
+The data is included in the repository so you can run this file from top to bottom. The frames "Define and Train Model" and "Evaluate Model and Save" will run a single training iteration and automatically display data about the training. The best iteration can be selected from the "saved_models" array and serialized to a file.
+
+## LSTM Model
+
+Runs in the same format as the MLP file. Load the data, define functions, run a single iteration, save models, serialize list of saved files.
+
+
+## CRF Model
+
+Runs in the same format as the MLP file. Load the data, define functions, run a single iteration, save models, serialize list of saved files. The only difference is this file saves recall, accuracy, and auc as well as the models (because it takes a long time to get this information after).
+
+## Evaluation
+
+Can be run from top to bottom. Will load the saved models and create a graph and data for tables
